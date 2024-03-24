@@ -1,3 +1,28 @@
 # Bubble Sort
 
-Bubble Sort is a simple sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. It gets its name because with each iteration the largest element "bubbles" up to its proper location. It continues this process of swapping until the entire list is sorted in ascending order. The main steps of the algorithm are: starting from the beginning of the list, compare every pair of adjacent items and swap them if they are in the wrong order, and then pass through the list until no more swaps are needed. However, despite being simple, Bubble Sort is not suited for large datasets as it has a worst-case and average time complexity of O(n²), where n is the number of items being sorted.
+## Description
+- **Type**: A straightforward sorting algorithm.
+- **Mechanism**: Involves repeated swapping of adjacent elements if they are in the incorrect order.
+
+## Working Principle
+1. **Iteration**: The algorithm iterates over the entire list.
+2. **Swapping**:
+   - Compares each pair of adjacent items.
+   - If they are in the wrong order (based on the sorting criteria), they are swapped.
+3. **"Bubbling" Effect**: The largest (or smallest, depending on sorting order) element bubbles up to its correct position with each pass through the list.
+4. **Completion Criteria**: Continues this process until no further swaps are needed, indicating the list is sorted.
+
+## Time Complexity
+- **Worst-Case and Average**: O(n²), where 'n' is the number of items.
+- **Inefficient for Large Datasets**: Due to its quadratic time complexity, Bubble Sort is not practical for large lists.
+
+## Characteristics
+- **Simplicity**: Easy to understand and implement.
+- **Stability**: Maintains the relative order of equal elements.
+
+## Advantages
+- **Applicability**: Works well for small lists or when simplicity is a priority.
+- **Visual Teaching Tool**: Often used for educational purposes to demonstrate basic sorting principles.
+
+## Limitations
+- **Inefficiency**: Due to its high time complexity, it is not suitable for scenarios where performance is critical, particularly with large data sets.
