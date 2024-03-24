@@ -1,3 +1,18 @@
-# Logarithmic
+# Logarithmic Time Complexity (O(log n))
 
-Logarithmic time complexity (O(log n)) often indicates that the algorithm halves the size of the input at each step. It's more efficient compared to linear time complexity. Binary search is a classic example of logarithmic time complexity where at every step, the algorithm breaks the list into half until it finds the desired element. As the size of the input increases, the growth of the time taken by an algorithm with logarithmic complexity grows slowly because it divides the problem into smaller parts in each step.
+## Overview
+- **Notation**: Represented as O(log n).
+- **Characteristic**: The algorithm reduces the input data set size by a factor (usually half) in each step.
+
+## Efficiency
+- **Compared to Linear Complexity**: Logarithmic complexity is more efficient than linear time complexity (O(n)).
+- **Growth Rate**: As the input size increases, the number of steps needed increases slowly and logarithmically.
+
+## Example: Binary Search
+- **Process**: The algorithm divides the list in half with each iteration.
+- **Finding an Element**: It narrows down the search by eliminating half of the elements in every step.
+- **Implication**: Even for large lists, the number of steps to find an element grows logarithmically and not linearly.
+
+## Significance
+- **Scalability**: Algorithms with O(log n) complexity handle large data sets efficiently, as the number of steps does not increase proportionally with the input size.
+- **Application**: Ideal for search operations in sorted data structures, ensuring fast retrieval times even as data volume grows.
