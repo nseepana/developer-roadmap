@@ -1,3 +1,26 @@
 # Kruskal's Algorithm
 
-Kruskal's algorithm is a popular procedure in computer science for finding minimum spanning trees in a graph, developed by Joseph Kruskal in 1956. The algorithm operates by sorting the edges of the graph by their weight in ascending order. Then, it loops through each, adding the edge to the spanning tree if it doesn't form a circuit with the edges already there. This process repeats until all the vertices in the graph are included in the tree. Kruskal's algorithm belongs to the group of Greedy Algorithms as it tries to find the local optimum at each stage with the hope of finding the global optimum. It has an overall time complexity of O(E log E) or O(E log V), where E is the number of edges and V is the number of vertices.
+## Overview
+- **Type**: An algorithm for finding the Minimum Spanning Tree (MST) of a graph.
+- **Developer**: Joseph Kruskal (1956).
+
+## Working Mechanism
+1. **Edge Sorting**: Sorts all edges in the graph in ascending order based on their weights.
+2. **Edge Selection**:
+   - Iterates through the sorted edges.
+   - Adds each edge to the spanning tree, provided it doesn't create a cycle.
+3. **Completion**: Continues until all vertices in the graph are connected in the spanning tree.
+
+## Classification
+- **Greedy Algorithm**: Follows a greedy approach, making the locally optimal choice at each step with the aim of finding a global optimum.
+
+## Time Complexity
+- **Performance**: O(E log E) or O(E log V), where E is the number of edges and V is the number of vertices in the graph.
+- **Efficiency**: The time complexity mainly stems from the edge sorting process.
+
+## Applications
+- **Network Design**: Useful in various network designs and optimization problems.
+- **Optimal Connectivity**: Employed in scenarios requiring the connection of different points at the minimum possible cost.
+
+## Importance
+- Kruskal's algorithm is valued for its simplicity and effectiveness in finding the minimum spanning tree, especially in cases where the graph is sparse and the number of edges is relatively low compared to the number of vertices.
