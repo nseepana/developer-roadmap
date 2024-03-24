@@ -1,3 +1,24 @@
-# Search Algorithms
+# Overview of Search Algorithms in Graphs
 
-Search algorithms are fundamental techniques used for exploring a graph. Two classical methods are **Depth-First Search** (DFS) and **Breadth-First Search** (BFS). **DFS** relies on a stack and the concept of backtracking. Starting from a given node, it explores as far down a path as possible before backtracking. **BFS**, on the other hand, uses a queue and visits all of a node's neighbors at one level before moving on to the next. For discovering the shortest path between two nodes, Dijkstra’s algorithm and the A* search algorithm are often used. **Dijkstra's algorithm** builds up a table that provides the shortest distances to each reachable node from a selected starting node. **A* search algorithm**, a modification of Dijkstra's algorithm, uses a heuristic to provide a best estimate of the path from the current node to the goal, thus often increasing the algorithm's efficiency.
+## Depth-First Search (DFS)
+- **Principle**: Utilizes a stack (either actual or through recursion) for search operations.
+- **Process**: Starts at a node, explores as deep as possible along each branch before backtracking.
+- **Application**: Suitable for tasks like puzzle solving, topological sorting, and exploring paths in a maze.
+
+## Breadth-First Search (BFS)
+- **Principle**: Uses a queue to explore all neighbors at a current depth level before moving to the next level.
+- **Process**: Starts at a node and explores all adjacent nodes, then each of their neighbors, and so on.
+- **Application**: Ideal for finding the shortest path on unweighted graphs or for traversal in networks like social graphs.
+
+## Dijkstra’s Algorithm
+- **Purpose**: Finds the shortest paths from a single source to all other nodes in a weighted graph.
+- **Mechanism**: Maintains a table of the shortest known distances to each node, updating paths and distances as it explores the graph.
+- **Limitation**: Cannot handle negative edge weights.
+- **Use**: Widely used in network routing, for example, in GPS navigation systems.
+
+## A* Search Algorithm
+- **Concept**: A more efficient form of Dijkstra's, incorporating heuristics.
+- **Heuristic Function**: Estimations of distance to the goal are used to prioritize nodes likely to lead to the shortest path.
+- **Use**: Effective in pathfinding and graph traversal problems, especially in computer games, AI, and robotics.
+
+Each of these algorithms serves a specific purpose and is selected based on the requirements of the problem, such as the type of graph (weighted/unweighted, directed/undirected), the presence of negative edges, and the need for efficiency in terms of computation and memory usage.
