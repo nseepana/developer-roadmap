@@ -1,3 +1,24 @@
-# B/B+ Trees
+# B Trees and B+ Trees
 
-`B trees` and `B+ trees` are both types of self-balancing, sorted, tree-based data structures that maintain sorted data in a way that allows for efficient insertion, deletion, and search operations. A `B tree` is a tree data structure in which each node has multiple keys and can be in more than two children nodes. Each internal node in a `B tree` can contain a variable number of keys and pointers. The keys act as separation values which divide its subtrees. One important aspect of a `B tree` is that every key in the node also appears in the parent node. On the other hand, a `B+ tree` is an extension of a `B tree` which allows for efficient traversal of data. In a `B+ tree`, data pointers are stored only at the leaf nodes of the tree, making every leaf node of a `B+ tree` a linked list. The intermediary nodes only use the keys to aid with the search.
+## B Trees
+- **Structure**: A B tree is a balanced tree data structure where each node has multiple children.
+- **Key Features**:
+  - **Multiple Keys and Children**: Each node contains several keys and can have several children.
+  - **Balancing**: The tree remains balanced through redistributions and splits during insertions and deletions.
+  - **Usage in Internal Nodes**: Keys in internal nodes also appear in child nodes, used for navigation.
+- **Applications**: Commonly used in databases and file systems for efficient data storage and retrieval.
+
+## B+ Trees
+- **Extension of B Trees**: A B+ tree is a variant of the B tree with some differences in structure.
+- **Key Features**:
+  - **Leaf Nodes**: Data pointers are stored only in the leaf nodes, and these leaf nodes are linked, forming a linked list.
+  - **Intermediate Nodes**: Contain only keys, which are used to guide the search process to the appropriate leaf.
+- **Efficient Traversal**: The linked list structure of leaf nodes enables efficient full-range scans and traversal of data.
+- **Usage**: Also widely used in databases and file systems, particularly where range searches are frequent.
+
+## Comparison
+- **Key Storage**: B trees store keys and data in every node, while B+ trees store data only in leaf nodes.
+- **Space Efficiency**: B+ trees are often more space-efficient due to the separation of keys and actual data.
+- **Search Operations**: Both structures offer logarithmic time search operations, but B+ trees offer more efficient range-based queries.
+
+B and B+ trees are fundamental in computer science for managing large indexed datasets, providing a balance between the need for quick data insertion, deletion, and retrieval. Their structure and balancing algorithms ensure that operations remain efficient even as the amount of data grows.
