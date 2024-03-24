@@ -1,3 +1,29 @@
 # Merge Sort
 
-__Merge sort__ is a type of sorting algorithm that follows the divide-and-conquer paradigm. It was invented by John von Neumann in 1945. This algorithm works by dividing an unsorted list into `n` partitions, each containing one element (a list of one element is considered sorted), then repeatedly merging partitions to produce new sorted lists until there is only 1 sorted list remaining. This resulting list is the fully sorted list. The process of dividing the list is done recursively until it hits the base case of a list with one item. Merge sort has a time complexity of `O(n log n)` for all cases (best, average and worst), which makes it highly efficient for large data sets.
+## Overview
+- **Type**: A divide-and-conquer sorting algorithm.
+- **Inventor**: Developed by John von Neumann in 1945.
+
+## How It Works
+1. **Dividing Phase**:
+   - The list is recursively divided into smaller partitions, ultimately reaching partitions with a single element (inherently sorted).
+2. **Merging Phase**:
+   - These partitions are then merged back together in a sorted manner.
+   - During each merge step, elements from the partitions are compared and combined to form a larger sorted list.
+3. **Completion**:
+   - This process continues until all partitions are merged into a single, fully sorted list.
+
+## Time Complexity
+- **Uniform Efficiency**: Exhibits a time complexity of O(n log n) in all cases (best, average, and worst).
+- **Advantage**: This consistent performance makes it highly efficient for large data sets.
+
+## Characteristics
+- **Stability**: Maintains the relative order of equal elements, making it a stable sort.
+- **Not In-Place**: Requires additional memory for the merging process, unlike in-place sorting algorithms like insertion sort or heapsort.
+
+## Advantages
+- **Scalability**: Particularly effective for large datasets due to its predictable time complexity.
+- **Predictability**: Offers a consistent runtime irrespective of the initial order of the elements.
+
+## Use Cases
+- **Suitability**: Ideal for scenarios where data consistency and predictability in performance are critical, and where sufficient memory is available to handle the additional space requirements during sorting.
