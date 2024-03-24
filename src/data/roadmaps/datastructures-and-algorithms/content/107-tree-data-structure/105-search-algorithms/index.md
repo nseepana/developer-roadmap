@@ -1,3 +1,30 @@
-# Search Algorithms
+# Search Algorithms in Tree Data Structures
 
-Search algorithms in context of the tree data structure typically include breadth-first search (BFS) and depth-first search (DFS). BFS traverses the tree level by level starting from the root. It visits all nodes at current depth or level before proceeding to nodes at the next level. On the contrary, DFS travels toward the deepest node first, which means it travels as far as it can down one path before backtracking and exploring the next available path. DFS has three types - pre-order (root, left, right), in-order (left, root, right) and post-order (left, right, root). Another important search algorithm is the Binary Search that operates only on sorted dataset and effectively halves the search space after each comparison. It seeks the mid-point of the array and compares it against the target value. If the mid-point value is greater, it repeats the process on the left half and if the mid-point value is less, then on the right half.
+## Breadth-First Search (BFS)
+- **Traversal Method**: Visits nodes level by level, starting from the root.
+- **Process**:
+  - Explores all nodes at the current depth before moving to the next level.
+- **Application**: Often used for shortest path searches in unweighted graphs or trees.
+
+## Depth-First Search (DFS)
+- **Traversal Method**: Prioritizes reaching the deepest node along each branch before backtracking.
+- **Types**:
+  1. **Pre-Order (Root, Left, Right)**: Visits the root node first, then left subtree, and finally right subtree.
+  2. **In-Order (Left, Root, Right)**: Visits left subtree first, then the root, and finally the right subtree. (Produces sorted order in BSTs)
+  3. **Post-Order (Left, Right, Root)**: Visits left subtree, right subtree, and the root last.
+- **Application**: Used in various tree operations like expression tree evaluations and tree destruction processes.
+
+## Binary Search (on sorted datasets)
+- **Applicability**: Exclusively for sorted arrays or lists.
+- **Process**:
+  - Compares the target value with the middle element of the array.
+  - If the target is less than the middle element, searches the left half; if more, searches the right half.
+- **Efficiency**: Highly efficient with O(log n) complexity due to its halving of the search space with each step.
+
+## Distinctions and Applications
+- **BFS vs. DFS**: 
+  - BFS is more suitable for searching the closest nodes, whereas DFS is useful for exploring as far as possible within a branch.
+- **Binary Search**: 
+  - Optimal for quickly finding an element in a sorted dataset, not applicable to tree structures unless it’s a Binary Search Tree with a specific arrangement.
+
+Each of these search algorithms serves different purposes and is chosen based on the specific requirements of the data structure and the problem at hand.
