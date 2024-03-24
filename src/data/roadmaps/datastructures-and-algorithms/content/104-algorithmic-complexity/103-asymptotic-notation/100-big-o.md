@@ -1,3 +1,18 @@
 # Big O Notation
 
-"Big O" notation, officially known as O-notation, is used in computer science to describe the performance or complexity of an algorithm. Specifically, it provides an upper bound on the time complexity, describing the worst-case scenario. Thus, it gives an upper limit on the time taken for an algorithm to complete based on the size of the input. The notation is expressed as O(f(n)), where f(n) is a function that measures the largest count of steps that an algorithm could possibly take to solve a problem of size n. For instance, O(n) denotes a linear relationship between the time taken and the input size, while O(1) signifies constant time complexity, i.e., the time taken is independent of input size. Remember, Big O notation is only an approximation meant to describe the scaling of the algorithm and not the exact time taken.
+## Overview
+- **Purpose**: Big O notation is a mathematical representation used in computer science to describe the performance or complexity of an algorithm.
+- **Focus**: It provides an upper bound on the time complexity, indicating the worst-case scenario.
+
+## Functionality
+- **Expression**: The notation is written as O(f(n)), where:
+  - **f(n)** represents a function that measures the maximum number of steps taken by an algorithm to solve a problem of size 'n'.
+- **Implication**: This gives an upper limit on the time an algorithm takes to complete, relative to the input size.
+
+## Examples
+- **O(n)**: Indicates a linear relationship between the time taken and the input size.
+- **O(1)**: Signifies constant time complexity, where the time is independent of the input size.
+
+## Key Understanding
+- **Approximation**: Big O notation is an approximation tool. It describes how an algorithm scales and behaves as the input size grows.
+- **Not Exact Timing**: It does not provide the exact time taken for an algorithm to execute but rather the growth trend of the execution time or steps as the input size increases.
