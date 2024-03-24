@@ -1,3 +1,17 @@
-# Linear
+# Linear Time Complexity (O(n))
 
-Linear time complexity, denoted as O(n), is one of the best possible algorithmic performance situations. An algorithm is said to have a linear time complexity when the running time increases at most linearly with the size of the input data. This means that if you double the size of the input, the running time will at most double as well. In an ideal situation, every single element in the data set should be viewed exactly once. Sorting algorithms such as counting sort and bucket sort have linear time complexity under certain conditions.
+## Definition
+- **Notation**: Expressed as O(n).
+- **Characteristic**: The running time of the algorithm increases linearly with the size of the input.
+
+## Understanding Linear Complexity
+- **Input Relation**: If the input size doubles, the running time at most doubles.
+- **Processing Method**: Ideally, each element of the input is examined or processed exactly once.
+
+## Examples
+- **Sorting Algorithms**: Counting sort and bucket sort, under specific conditions, exhibit linear time complexity.
+- **Simple Operations**: Scanning through an array or list once, to perform operations like finding a maximum or minimum value.
+
+## Significance
+- **Efficiency**: Among various complexity classes, linear time complexity is often seen as highly efficient, especially for moderate-sized inputs.
+- **Real-world Relevance**: Ideal for scenarios where each piece of input data needs individual attention, ensuring comprehensiveness in processing.
