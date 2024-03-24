@@ -1,3 +1,26 @@
-# Trie
+# Trie (Prefix Tree)
 
-A **Trie**, also called digital tree and sometimes radix tree or prefix tree, is a type of search tree that is used to store a dynamic set or associative array where the keys are usually strings. Unlike binary search trees, no node in the tree stores the key associated with that node; instead, its position in the tree defines the key with which it is associated. All the descendants of any one node have a common prefix of the string associated with that node, and the root is associated with the empty string. A 'trie' is thus a way to represent the 're**trie**val' of information and is a type of tree structure used for this purpose. Typical usage scenarios could be in storing a predictive text or autocomplete dictionary, such as found on your smartphone or search engine.
+## Overview
+- **Type**: A specialized tree-like data structure.
+- **Alternative Names**: Digital tree, radix tree, or prefix tree.
+- **Key Characteristic**: Primarily used for storing strings in a way that facilitates fast retrieval.
+
+## Structure
+- **Node Representation**: Each node (except the root) is associated with a character.
+- **Key Storage**: The position of a node in the tree defines the key (or string) associated with that node, not the node itself.
+- **Common Prefix**: All descendants of a node have a common prefix, with the root node representing an empty string.
+
+## Functioning
+- **Path Traversal**: Traversing from the root to a node spells out a word or a prefix.
+- **Prefix Matching**: Useful for operations involving prefix matching or searching.
+
+## Applications
+- **Autocomplete Systems**: Employed in predictive text and autocomplete functionalities in smartphones and search engines.
+- **Dictionary Implementations**: Efficient for implementing dictionaries with quick lookup times.
+- **IP Routing**: Sometimes used in longest prefix matching for IP routing.
+
+## Advantages
+- **Efficiency**: Provides quick search, insert, and delete operations, often faster than binary search trees or hash tables for certain types of lookups.
+- **Space Optimization**: More space-efficient for storing large sets of strings that share common prefixes.
+
+Tries are an effective data structure for handling problems related to string manipulation and retrieval, offering advantages in terms of speed and efficiency, particularly when dealing with large sets of strings or performing prefix-based searches.
