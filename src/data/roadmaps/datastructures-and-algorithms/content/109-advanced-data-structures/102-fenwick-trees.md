@@ -1,3 +1,29 @@
-# Fenwick Trees
+# Fenwick Trees (Binary Indexed Trees)
 
-Fenwick Trees, also known as Binary Indexed Trees, are data structures that can efficiently support the operation of updating elements and calculating prefix sums in a table of numbers. This makes it particularly useful in situations where the table gets updated often and different kinds of queries (such as sum of elements) need to be answered fast. A Fenwick Tree typically takes O(log n) time for both updation and query operations, which is more efficient than an array or a segment tree. It achieves this efficiency by storing partial sum information in the array. This allows for efficient calculation of sum ranges, with the operation of adding an element and getting the sum of a range both achieve in O(log n) time.
+## Definition
+- **Type**: A specialized data structure for efficient computation of cumulative frequency or prefix sum.
+- **Alternate Name**: Binary Indexed Tree (BIT).
+
+## Purpose
+- **Operations**: Supports two primary operations effectively:
+  1. **Update**: Modifies an element in the array.
+  2. **Query**: Calculates the sum of a range of elements.
+
+## Efficiency
+- **Time Complexity**: Both update and query operations are performed in O(log n) time.
+- **Compared to Arrays**: More efficient than using simple arrays for repetitive sum and update operations.
+
+## Structure
+- **Partial Sum Storage**: Stores cumulative sums or frequency counts in a tree-like structure within an array.
+- **Index Representation**: Uses binary representation of indexes for efficient calculation.
+
+## Applications
+- **Use Cases**: Ideal in scenarios with frequent updates and range sum queries, like in:
+  - Computational finance for cumulative frequencies.
+  - Data analysis tasks involving cumulative statistics.
+
+## Advantages
+- **Space Efficiency**: Requires less space compared to segment trees.
+- **Operation Speed**: Both updation and sum queries are faster compared to simple array or prefix sum array implementations.
+
+Fenwick Trees are a powerful tool in the arsenal of advanced data structures, offering a blend of efficiency and simplicity, especially for problems that involve frequent updates and queries over an array. They provide a practical approach for efficient data manipulation and retrieval in logarithmic time.
