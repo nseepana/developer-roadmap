@@ -1,3 +1,19 @@
 # Big-θ Notation
 
-Big Theta \(\Theta\) notation is used in computer science to describe an asymptotic tight bound on a function. This essentially means it provides both an upper and lower bound for a function. When we say a function f(n) is \(\Theta(g(n))\), we mean that the growth rate of f(n) is both bounded above and below by the function g(n) after a certain point. This is more precise than Big O and Big Omega notation, which provide only an upper and a lower bound, respectively. Big Theta notation tells us exactly how a function behaves for large input values. For example, if an algorithm has a time complexity of \(\Theta(n^2)\), it means the running time will increase quadratically with the input size.
+## Definition
+- **Purpose**: Big Theta (Θ) notation is a mathematical concept in computer science used to define the asymptotic tight bound of a function.
+- **Functionality**: It offers both an upper and lower bound on a function's growth rate.
+
+## Understanding Θ-notation
+- **Expression**: When we say a function f(n) is Θ(g(n)), it indicates:
+  - **Upper Bound**: The growth rate of f(n) does not exceed g(n) beyond a certain point.
+  - **Lower Bound**: The growth rate of f(n) is at least as fast as g(n) beyond a certain point.
+- **Precision**: This is more precise than Big O (upper bound only) and Big Omega (lower bound only) notations.
+
+## Application
+- **Example**: If an algorithm is described as having Θ(n²) complexity, it means:
+  - **Quadratic Growth**: The running time of the algorithm increases quadratically in proportion to the input size.
+  - **Tight Bound**: This notation specifies that the algorithm's time complexity will consistently grow in this manner for large input values, neither significantly faster nor slower.
+
+## Significance
+- **Accuracy**: Big Theta notation is valuable for providing an exact characterization of an algorithm's behavior, especially for large inputs, revealing its efficiency in a comprehensive manner.
