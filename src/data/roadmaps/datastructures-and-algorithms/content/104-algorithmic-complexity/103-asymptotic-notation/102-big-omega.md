@@ -1,3 +1,17 @@
 # Big-Ω Notation
 
-The Big Omega (Ω) notation is used in computer science to describe an algorithm's lower bound. Essentially, it provides a worst-case analysis of an algorithm's efficiency, giving us a lower limit of the performance. If we say a function f(n) is Ω(g(n)), it means that from a certain point onwards (n0 for some constant n0), the value of g(n) is a lower bound on f(n). It implies that f(n) is at least as fast as g(n) past a certain threshold. This means that the algorithm won't perform more efficiently than the Ω time complexity suggests.
+## Definition
+- **Purpose**: Big Omega (Ω) notation is used in computer science for describing the lower bound of an algorithm's performance.
+- **Aspect of Analysis**: It focuses on the worst-case analysis, setting a baseline for the minimum efficiency of an algorithm.
+
+## Understanding Ω-notation
+- **Expression**: When a function f(n) is described as Ω(g(n)), it implies:
+  - **Lower Bound**: From a certain point (n0) onward, g(n) serves as a minimum threshold for f(n).
+  - **Performance Criterion**: f(n) is guaranteed to be at least as fast or efficient as g(n) beyond this threshold.
+
+## Application
+- **Interpretation**: The Ω notation indicates that the algorithm will not execute more efficiently than what the Ω complexity suggests. 
+- **Example**: If an algorithm has a time complexity of Ω(n³), it means the algorithm's performance cannot be faster than cubic growth relative to the input size for sufficiently large inputs.
+
+## Importance
+- **Analysis Insight**: Big Omega notation provides a crucial insight into the minimum guaranteed performance of an algorithm, enabling an understanding of its lower limits in terms of efficiency and resource utilization.
