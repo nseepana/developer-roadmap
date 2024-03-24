@@ -1,3 +1,28 @@
 # Segment Trees
 
-A **Segment Tree** is a data structure designed for efficient processing of range queries and updates on array elements. In a situation where you have an array and you need to execute several types of queries including updating array elements and computing sum or minimum or maximum of elements in a given range, segment trees could be a great choice. The tree itself is a height-balanced binary tree and is filled with data from the input array. The leaves of the Segment Tree contain the array elements, while the internal nodes store information needed for processing the query, often the sum, minimum, or maximum of the elements represented by their child nodes. Efficient implementation of segment trees can achieve query and update operations in logarithmic time.
+## Overview
+- **Purpose**: Designed for efficient handling of range queries and updates on an array.
+- **Ideal Use**: Particularly useful in scenarios with frequent updates and queries such as sum, minimum, or maximum in a range.
+
+## Structure
+- **Binary Tree Format**: Constructed as a height-balanced binary tree.
+- **Node Content**:
+  - **Leaves**: Contain the actual array elements.
+  - **Internal Nodes**: Store aggregate information (like sum, min, or max) of the range of elements they represent.
+
+## Functionality
+- **Range Queries**: Can efficiently compute aggregate functions over a range of array elements.
+- **Updates**: Capable of updating array elements while maintaining the integrity of range information.
+
+## Time Complexity
+- **Operations**: Both querying and updating elements are achieved in O(log n) time.
+- **Construction**: Building a segment tree initially takes O(n) time.
+
+## Applications
+- **Use Cases**: Often used in situations requiring dynamic range calculations like in graphical interfaces, computational geometry, and various problem-solving scenarios in competitive programming.
+
+## Advantages
+- **Efficiency**: Provides a balance between efficient update operations and quick range queries.
+- **Flexibility**: Can be modified or extended to support various types of queries and updates.
+
+Segment Trees are a powerful data structure when dealing with problems that involve intervals or segments of an array, especially when the array undergoes frequent modifications. They provide a practical solution for complex range queries and updates, maintaining efficiency in both memory and operation time.
